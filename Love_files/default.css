@@ -83,3 +83,21 @@ a {
 .space {
 	margin-right: 150px;
 }
+
+#intro-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    z-index: 10;
+}
+
+#intro-images img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+}
