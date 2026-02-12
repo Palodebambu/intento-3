@@ -53,7 +53,7 @@
     var foot = tree.footer;
     var hold = 1;
 
-    
+    var images = $("#intro .circle img");
     
     canvas.click(function (e) {
         var offset = canvas.offset(), x, y;
@@ -66,11 +66,13 @@
             canvas.unbind("mousemove");
             canvas.removeClass('hand');
         }
-    }).mousemove(function (e) {
+    })
+        .mousemove(function (e) {
         var offset = canvas.offset(), x, y;
         x = e.pageX - offset.left;
         y = e.pageY - offset.top;
         canvas.toggleClass('hand', seed.hover(x, y));
+             images.animate({opacity: 0}, 1000);
     });
 
     var seedAnimate = eval(Jscex.compile("async", function () {
@@ -157,3 +159,19 @@
 
     runAsync().start();
 })();
+
+function positionImages() {
+    var center = seed.heart.point; // posición del corazón
+    var radius = 120;               // distancia desde el centro
+    var imgs = $("#intro .circle img");
+
+    imgs.each(function(i) {
+        var angle = (i / imgs.length) * 2 * Math.PI;
+        var x = center.x + radius * Math.cos(angle) - $(this).width()/2;
+        var y = center.y + radius * Math.sin(angle) - $(this).height()/2;
+        $(this).css({position: 'absolute', left: x + 'px', top: y + 'px'});
+    });
+}
+
+// Llamamos a la función después de crear la semilla
+positionImages();
