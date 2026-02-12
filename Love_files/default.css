@@ -95,7 +95,7 @@ a {
 .circle {
     position: relative;
 	width: 500px;
-	 height: 500px;
+	 height: 100px;
     margin: 0 auto;
     top: 50%;
     transform: translateY(-50%);
