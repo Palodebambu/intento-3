@@ -110,3 +110,12 @@ a {
     border-radius: 20px;
     box-shadow: 0 0 25px hotpink;
 }
+
+.circle img:nth-child(1) { top: 0; left: 190px; }
+.circle img:nth-child(2) { top: 60px; right: 0; }
+.circle img:nth-child(3) { top: 190px; right: 0; }
+.circle img:nth-child(4) { bottom: 60px; right: 0; }
+.circle img:nth-child(5) { bottom: 0; left: 190px; }
+.circle img:nth-child(6) { bottom: 60px; left: 0; }
+.circle img:nth-child(7) { top: 190px; left: 0; }
+.circle img:nth-child(8) { top: 60px; left: 0; }
