@@ -53,7 +53,7 @@
     var foot = tree.footer;
     var hold = 1;
 
-    var images = $("#intro .circle img");
+    
     
     canvas.click(function (e) {
         var offset = canvas.offset(), x, y;
