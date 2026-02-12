@@ -86,8 +86,8 @@ a {
 
 #intro {
     position: absolute;
-    width: 200%;
-    height: 100%; /* importante */
+    width: 1100px;
+    height: 800px; /* importante */
     top: 50;
     left: 50;
 }
