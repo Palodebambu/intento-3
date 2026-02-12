@@ -92,7 +92,8 @@ a {
     left: 0;
     display: flex;      /* Flex para centrar */
     justify-content: center; /* Centra horizontal */
-    align-items: center;     /* Centra vertical dentro de #intro */
+    align-items: flex-start;     /* Centra vertical dentro de #intro */
+	padding-top: 50px;
 }
 
 .circle {
