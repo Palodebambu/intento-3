@@ -53,12 +53,16 @@
     var foot = tree.footer;
     var hold = 1;
 
+    var images = $("#intro .circle img");
+    
     canvas.click(function (e) {
         var offset = canvas.offset(), x, y;
         x = e.pageX - offset.left;
         y = e.pageY - offset.top;
         if (seed.hover(x, y)) {
             hold = 0;
+            images.animate({opacity: 0}, 1000);
+            $("#intro").delay(1000).fadeOut(500);
             canvas.unbind("click");
             canvas.unbind("mousemove");
             canvas.removeClass('hand');
