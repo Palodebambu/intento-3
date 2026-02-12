@@ -103,14 +103,14 @@ a {
 
 .circle img {
 	 position: absolute;
-    width: 120px;
-    height: 120px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 0 25px hotpink;
 }
 
-.circle img:nth-child(1) { top: 100px; left: 190px; }
+.circle img:nth-child(1) { top: 0; left: 190px; }
 .circle img:nth-child(2) { top: 60px; right: 0; }
 .circle img:nth-child(3) { top: 190px; right: 0; }
 .circle img:nth-child(4) { bottom: 60px; right: 0; }
