@@ -62,7 +62,6 @@
         if (seed.hover(x, y)) {
             hold = 0;
             images.animate({opacity: 0}, 1000);
-            $("#intro").delay(1000).fadeOut(500);
             canvas.unbind("click");
             canvas.unbind("mousemove");
             canvas.removeClass('hand');
