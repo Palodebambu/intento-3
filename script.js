@@ -59,6 +59,7 @@
         y = e.pageY - offset.top;
         if (seed.hover(x, y)) {
             hold = 0;
+            $("intro").fadeOut(500);
             canvas.unbind("click");
             canvas.unbind("mousemove");
             canvas.removeClass('hand');
