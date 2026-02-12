@@ -159,19 +159,3 @@
 
     runAsync().start();
 })();
-
-function positionImages() {
-    var center = seed.heart.point; // posición del corazón
-    var radius = 120;               // distancia desde el centro
-    var imgs = $("#intro .circle img");
-
-    imgs.each(function(i) {
-        var angle = (i / imgs.length) * 2 * Math.PI;
-        var x = center.x + radius * Math.cos(angle) - $(this).width()/2;
-        var y = center.y + radius * Math.sin(angle) - $(this).height()/2;
-        $(this).css({position: 'absolute', left: x + 'px', top: y + 'px'});
-    });
-}
-
-// Llamamos a la función después de crear la semilla
-positionImages();
