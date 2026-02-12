@@ -86,27 +86,28 @@ a {
 
 #intro {
     position: absolute;
-    width: 1100px;
-    height: 800px; /* importante */
-    top: 50;
-    left: 50;
+    width: 100%;        /* Ocupa todo el ancho disponible */
+    height: 800px;      /* Mantienes la altura */
+    top: 0;             /* Desde la parte superior */
+    left: 0;
+    display: flex;      /* Flex para centrar */
+    justify-content: center; /* Centra horizontal */
+    align-items: center;     /* Centra vertical dentro de #intro */
 }
 
 .circle {
     position: relative;
-	width: 500px;
-	 height: 500px;
-    margin: 0 auto ;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 500px;
+    height: 500px;
 }
 
+/* Mantienes tu distribución circular */
 .circle img {
-	 position: absolute;
+    position: absolute;
     width: 50px;
     height: 50px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 50%;   /* Para que sean circulares */
     box-shadow: 0 0 25px hotpink;
 }
 
@@ -118,3 +119,4 @@ a {
 .circle img:nth-child(6) { bottom: 60px; left: 0; }
 .circle img:nth-child(7) { top: 190px; left: 0; }
 .circle img:nth-child(8) { top: 60px; left: 0; }
+
