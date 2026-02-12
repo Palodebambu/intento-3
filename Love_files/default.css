@@ -110,6 +110,8 @@ a {
     object-fit: cover;
     border-radius: 50%;   /* Para que sean circulares */
     box-shadow: 0 0 25px hotpink;
+	transition: opacity 1s ease;
+	opacity: 1;
 }
 
 .circle img:nth-child(1) { top: 0; left: 190px; }
