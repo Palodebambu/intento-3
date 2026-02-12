@@ -59,9 +59,6 @@
         y = e.pageY - offset.top;
         if (seed.hover(x, y)) {
             hold = 0;
-            $("intro .circle img").fadeOut(1000); // Las imágenes se desvanecen en 1 segundo
-            $("#intro").fadeOut(500);             // Opcional: ocultar todo el intro
-            $("#text").fadeIn(500);               // Mostrar texto
             canvas.unbind("click");
             canvas.unbind("mousemove");
             canvas.removeClass('hand');
