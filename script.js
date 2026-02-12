@@ -61,7 +61,6 @@
         y = e.pageY - offset.top;
         if (seed.hover(x, y)) {
             hold = 0;
-            images.animate({opacity: 0}, 1000);
             canvas.unbind("click");
             canvas.unbind("mousemove");
             canvas.removeClass('hand');
@@ -72,7 +71,6 @@
         x = e.pageX - offset.left;
         y = e.pageY - offset.top;
         canvas.toggleClass('hand', seed.hover(x, y));
-             images.animate({opacity: 0}, 1000);
     });
 
     var seedAnimate = eval(Jscex.compile("async", function () {
