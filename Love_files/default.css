@@ -93,11 +93,11 @@ a {
 }
 
 .circle {
-    position: relative;
+    position: absolute;
 	width: 500px;
 	 height: 500px;
     margin: 0 auto ;
-    top: 100%;
+    top: 50%;
     transform: translateY(-50%);
 }
 
